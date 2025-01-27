@@ -13,7 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { NavLink } from 'react-router-dom';
-import { Home, Person, BarChartOutlined } from '@mui/icons-material';
+import { Home, Person, BarChartOutlined, ProductionQuantityLimits, TableBar, Category, AddShoppingCart } from '@mui/icons-material';
 
 const drawerWidth = 240;
 
@@ -96,6 +96,10 @@ export default function MiniDrawer() {
   const menuItems = [
     { text: 'Dashboard', icon: <Home />, path: '/' },
     { text: 'Usuarios', icon: <Person />, path: '/usuarios' },
+    { text: 'Productos', icon: <ProductionQuantityLimits />, path: '/productos' },
+    { text: 'Categorías', icon: <Category />, path: '/categorias' },
+    { text: 'Mesas', icon: <TableBar />, path: '/mesas' },
+    { text: 'Pedidos', icon: <AddShoppingCart />, path: '/pedidos' },
     { text: 'Reportes', icon: <BarChartOutlined />, path: '/reportes' },
   ];
 
