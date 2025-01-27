@@ -120,9 +120,6 @@ export default function MiniDrawer() {
           >
             <MenuIcon />
           </IconButton>
-          {/* <Typography variant="h6" noWrap>
-            Pagina de Administración
-          </Typography> */}
           <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
             Dashboard de Administración
           </Typography>
