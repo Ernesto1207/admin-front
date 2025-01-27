@@ -1,6 +1,7 @@
 import React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
+import Avatar from '@mui/material/Avatar';
 import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -119,9 +120,15 @@ export default function MiniDrawer() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
-            Mini variant drawer
+          {/* <Typography variant="h6" noWrap>
+            Pagina de Administración
+          </Typography> */}
+          <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
+            Dashboard de Administración
           </Typography>
+          <Box>
+            <Avatar alt="Usuario" src="/static/images/avatar/1.jpg" />
+          </Box>
         </Toolbar>
       </AppBar>
       <Drawer
